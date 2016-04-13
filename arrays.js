@@ -36,6 +36,7 @@ var q3 = imgArray.length
  *  Using the array from Question 1, store the last element of the array in variable q4. Hint: How can we get the number of elements in the array?
  */
 
+var q4 = imgArray.pop()
 
 // Your code here
 
@@ -55,6 +56,8 @@ The end result should be an array of numbers with values 2,3,4,5
  */
 
 // Your code here
+
+var numArray = [1,2,3,4,5]
 
 
 /**
