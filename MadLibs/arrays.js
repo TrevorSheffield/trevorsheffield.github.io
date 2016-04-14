@@ -11,7 +11,10 @@
 
 // Your code here
 
-var imgArray = ['image1.png', 'image2.png', 'image3.png']
+
+
+var q1 = ['image1.png', 'image2.png', 'image3.png'];
+console.log("Answer for Question 1: " + q1);
 
 /**
  * Question 2
@@ -20,7 +23,8 @@ var imgArray = ['image1.png', 'image2.png', 'image3.png']
 
 // Your code here
 
-var q2 = imgArray.shift()	
+var q2 = q1.shift();
+console.log("Answer for Question 2: " + q2);	
 
 /**
  * Question 3
@@ -29,14 +33,17 @@ var q2 = imgArray.shift()
 
 // Your code here
 
-var q3 = imgArray.length 
+var q3 = q1.length;
+console.log("Answer for Question 3: " + q3);
+
 
 /**
  * Question 4
  *  Using the array from Question 1, store the last element of the array in variable q4. Hint: How can we get the number of elements in the array?
  */
 
-var q4 = imgArray.pop()
+var q4 = q1.pop();
+console.log("Answer for Question 4: " + q4)
 
 // Your code here
 
@@ -58,6 +65,12 @@ The end result should be an array of numbers with values 2,3,4,5
 // Your code here
 
 var numArray = [1,2,3,4,5]
+
+numArray.forEach(function(addOneAndSave){
+	console.log(addOneAndSave);
+});
+
+
 
 
 /**
