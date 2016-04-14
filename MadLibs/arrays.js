@@ -64,11 +64,13 @@ The end result should be an array of numbers with values 2,3,4,5
 
 // Your code here
 
-var numArray = [1,2,3,4,5]
+var numArray = [1,2,3,4]
 
-numArray.forEach(function(addOneAndSave){
-	console.log(addOneAndSave);
-});
+var addFunction = function(num) {
+	console.log(num + 1)
+};
+
+numArray.forEach(addFunction);
 
 
 
@@ -78,5 +80,13 @@ numArray.forEach(function(addOneAndSave){
  * Using the array from Question 1, find the average of the numbers in the array (average=sum of all numbers/number of numbers). Store the average in q2.
  */
 
+
+var numArray = [1,2,3,4]
+
+var avgFunction = function(num) {
+	console.log(num +)
+};
+
+numArray.forEach(addFunction);
 
 // Your code here
