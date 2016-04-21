@@ -1,30 +1,30 @@
 var startupX = ['Uber', 'Google', 'Amazon', 'Apple', 'Facebook', 'Twitter'];
 var startupY = ['Slack', 'Trello', 'Tesla', 'Hyperloop', 'Harvest'];
-
-var random1 = Math.floor((Math.random() * startupX.length));
+var favoriteStartups = [];
+//var random1 = Math.floor((Math.random() * startupX.length));
 var random2 = Math.floor((Math.random() * startupY.length));
+var globalOutput = '';
 
-/*function createNewStartup (){
-	var = xForY = document.getElementById('xForY').addEventListener()
-
-	var newStartup = xForY.innerHTML = console.log('A startup that is ' + startupX[random1] + ', but for ' + startupY[random2]);
-	console.log(newStartup);
-
-
+function createNewStartup (){
+	var random1 = Math.floor((Math.random() * startupX.length)); 
+	var random2 = Math.floor((Math.random() * startupY.length)); 
+	var output = 'A startup that is ' + startupX[random1] + ', but for ' + startupY[random2];
+	var xForY = document.getElementById('xForY');
+	xForY.innerHTML = output;
+	globalOutput = output; 
+	};	
 
 function favoriteStartup (){
-
+	favoriteStartups.push(globalOutput);
 };
 
 function printFavorite (){
 
 };
 
-*/
 
-document.getElementById('create').addEventListener('click', function(createNewStartup){
-	console.log('A startup that is ' + startupX[random1] + ', but for ' + startupY[random2]);
-}); 
+
+document.getElementById('create').addEventListener('click', createNewStartup);
 document.getElementById('save').addEventListener('click', favoriteStartup);
 document.getElementById('print').addEventListener('click', printFavorite);
 
