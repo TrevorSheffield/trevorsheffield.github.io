@@ -1,3 +1,5 @@
+
+
 module.exports = function(robot) {
     robot.respond(/is it a (weekend|holiday)\s?\?/i, function(msg){
         var today = new Date();
@@ -18,8 +20,10 @@ module.exports = function(robot) {
     });
 
     robot.respond(/are you there?/i, function(msg){
+        msg.reply("Bringing you the lastest in Artificial Inteligence research from Squirrel Labs: ")
         msg.reply(href="https://imgflip.com/i/12wou6");
     });
+
 
     robot.respond(/convert \$(.*) to btc/i, function(res){
         var usd = res.match[1];
